@@ -9,7 +9,10 @@ from transform.dimensions.dw_dim_tym import transform_dw_dim_tym
 from transform.dimensions.dw_dim_zapas import transform_dw_dim_zapas
 
 from transform.facts.dw_fakt_akce import transform_fakt_akce
-from transform.facts.dw_fakt_akce import transform_dw_fakt_tresty
+from transform.facts.dw_fakt_brankari import transform_dw_fakt_brankari
+from transform.facts.dw_fakt_hraci import transform_dw_fakt_hraci
+from transform.facts.dw_fakt_tresty import transform_dw_fakt_tresty
+from transform.facts.dw_fakt_vyhry import transform_dw_fakt_vyhry
 
 
 
@@ -29,14 +32,12 @@ def main():
 
         # Facts
         transform_fakt_akce(conn)
-        transform_dw_fakt_tresty(conn)
+        transform_dw_fakt_brankari(conn)        
         transform_dw_fakt_hraci(conn)
-        transform_dw_fakt_brankari(conn)
-        
+        transform_dw_fakt_tresty(conn)
+        transform_dw_fakt_vyhry(conn)
 
     conn.close()
-
-
 
 
 if __name__ == "__main__":
