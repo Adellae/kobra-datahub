@@ -5,7 +5,6 @@ CREATE TABLE IF NOT EXISTS dw_dim_zapas (
     datum TEXT,                         -- Formát: 'YYYY-MM-DD'
     cas TEXT,                           -- Formát: 'HH:MM'
     stadion TEXT,
-    sezona TEXT,                        -- Např. '2024/2025'
     soutez TEXT,
     rocnik TEXT,
     skupina TEXT,

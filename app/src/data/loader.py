@@ -5,8 +5,9 @@ import sys
 from pathlib import Path
 
 # Add root to sys.path for config import
-sys.path.append(str(Path(__file__).resolve().parent.parent))
+sys.path.append(str(Path(__file__).resolve().parents[3]))
 from config import DB_PATHS
+
 
 # 📥 Dimenze
 @st.cache_data
@@ -71,3 +72,5 @@ def load_fakt_brankari():
 def load_fakt_vyhry():
     conn = sqlite3.connect(DB_PATHS["DW"])
     return pd.read_sql("SELECT * FROM dw_fakt_vyhry", conn)
+
+

@@ -14,3 +14,6 @@ vyber_typ = st.sidebar.selectbox("Typ akce", ["Vše", "Gól", "Asistence", "Stř
 # použij filtr ve výpisu dat
 st.write(f"Zobrazuji akce typu: {vyber_typ}")
 
+
+
+st.warning("Work in progress...")

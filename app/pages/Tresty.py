@@ -13,3 +13,5 @@ vyber_duvod_trestu = st.sidebar.multiselect("Důvod trestu", ["Bitka", "Krosček
 # použij filtr ve výpisu dat
 st.write(f"Zobrazuji tresty: {vyber_trest}")
 
+
+st.warning("Work in progress...")
